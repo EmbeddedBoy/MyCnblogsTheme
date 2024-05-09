@@ -1,0 +1,133 @@
+<style id="ceshicss">
+  @media (max-width: 767px)
+  {
+    #set_btn_box {
+      width: 100vw;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: hsla(0,0%,100%,.6);
+      height: 49px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 40px;
+      border-top: 1px solid #e8e8e8;
+      box-sizing: border-box;
+    }
+
+    .set_btn {
+      margin-top: 0;
+    }
+
+    .set_btn.fly_top.fadeIn.animated {
+      position: absolute;
+      right: 10px;
+      bottom: 60px;
+    }
+    .container{
+      bottom:50px
+    }
+  }
+
+  #mainContent{
+    width:90%
+  }
+
+  </style>
+  <link href="https://blog-static.cnblogs.com/files/blogs/814193/tippy.min.css?t=1707016109&download=true" rel="stylesheet">
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/popper.min.js?t=1707026510&download=true"></script>
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/tippy.js?t=1707016122&download=true"></script>
+  <link rel='stylesheet' href='https://blog-static.cnblogs.com/files/blogs/814193/animate.min.css?t=1707026580&download=true'>
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/font_1825850_klax1ao4o6.js?t=1707026666&download=true"></script>
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/three.min.js?t=1707026725&download=true"></script>
+  <script src='https://blog-static.cnblogs.com/files/blogs/814193/star.js?t=1707026818&download=true'></script>
+  <link rel="stylesheet" href="https://blog-static.cnblogs.com/files/blogs/814193/OwO.min.css?t=1707026899&download=true" />
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/OwO.min.css?t=1707026899&download=true"></script>
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/cute-cnblogs3.js?t=1707026949&download=true"></script>
+  <script src="https://blog-static.cnblogs.com/files/blogs/814193/monitoring2.js?t=1707026963&download=true"></script>
+  <script>
+  
+  miluframe(
+    {
+      Youself:'https://www.cnblogs.com/zxr-blog', /*个人的博客园链接*/
+      /*博客园导航信息*/
+      custom:[
+      {
+        name:'博客园',
+        link:'https://www.cnblogs.com/',
+        istarget:false
+      },
+      {
+        name:'首页',
+        link:'https://www.cnblogs.com/zxr-blog',
+        istarget:false
+      },
+      {
+        name:'联系',
+        link:'https://msg.cnblogs.com/send/%E6%99%9A%E9%A3%8E%E4%B9%9F%E6%B8%A9%E6%9F%94',
+        istarget:true
+      },
+      // {
+      //   name:'评论',
+      //   link:'https://www.cnhttps://i.cnblogs.com/commentsblogs.com/miluluyo/p/11578505.html',
+      //   istarget:false
+      // },
+      {
+        name:'相册',
+        link:'https://www.cnblogs.com/zxr-blog/gallery/2375367.html',
+        istarget:false
+      },
+      {
+        name:'管理',
+        link:'https://i.cnblogs.com/',
+        istarget:true
+      }],
+
+      /*浏览器顶部小图标*/
+      logoimg:'https://images.cnblogs.com/cnblogs_com/blogs/814193/galleries/2375328/o_240126054014_%E5%A4%B4%E5%83%8F.jpg',
+
+      /*文章页面标题前的图标，此处图标有扩展，在icon 文件夹内，可以下载去查看*/
+      cuteicon:[
+        'icon-yinhexi',
+        'icon-hangxing',
+        'icon-qizhi',
+        'icon-rishi',
+        'icon-xiaohangxing',
+        'icon-beidouqixing',
+        'icon-huixing',
+        'icon-diqiu',
+        'icon-hangxing'
+      ],
+
+      /*赞赏，若true则显示此按钮，false则不显示*/
+      isGratuity:false,
+
+      /*赞赏按钮焦点显示赞赏内容，内容可自行更改*/
+      gratuity:'<div class="popper_box"><p><b>要请我喝奶茶吗  (づ??????)づ</b> </p><div class="popper_box_con"><div class="popper_box_con_li"><img src="https://images.cnblogs.com/cnblogs_com/miluluyo/1765646/o_200521053817wx.png" alt="">微信扫码</div><div class="popper_box_con_li"><img src="https://images.cnblogs.com/cnblogs_com/miluluyo/1765646/o_200521053827zfb.png" >支付宝扫码</div></div><p><b>留下一句你觉得很励志与美的话给我吧~</b>&nbsp;&nbsp;<b><a href="https://www.cnblogs.com/miluluyo/p/12930946.html">GO</a></b></div>'
+    }
+  )
+
+  </script>
+  <!-- 点赞 -->
+  <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
+  <script src="https://blog-static.cnblogs.com/files/miluluyo/mouse-click.js"></script>
+  
+  <!-- 以下内容是否添加你随意 -->
+  
+  <script>
+    /*在文章页面添加古诗词*/
+    $("#navigator").after('<div class="poem-wrap"><div class="poem-border poem-left"></div><div class="poem-border poem-right"></div><h1>每日一句</h1><div id="poem_sentence"></div><div id="poem_info"></div></div>')
+  </script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+      var sentence = document.querySelector("#poem_sentence")
+      var info = document.querySelector("#poem_info")
+      sentence.innerHTML = result.data.content
+      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+    });
+  </script>
+  
+
+
